@@ -1,0 +1,83 @@
+/*FERNANDEZ*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Playwrite+US+Trad:wght@100..400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+/*Agustin*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Playwrite+US+Trad:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/*Software Developer*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+US+Trad:wght@100..400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.contenedorTitulo{
+    position: relative;
+    background-color: transparent;
+    z-index: 1;
+    bottom: 200px;
+    width: 100%;
+    height: 100%;
+    position: sticky;
+}
+
+h1{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    position: static;
+    
+}
+
+
+.Apellido{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+    position: absolute;
+    left: 35px;
+    top: -250px;
+    
+
+    font-size: 50px;
+}
+
+
+.Nombre{
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    position: absolute;
+    left: 30px;
+    top: -200px;
+
+    font-size: 110px;
+    
+}
+
+.Profesion{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+    position: absolute;
+    left: 30px;
+    top: -70px;
+
+    font-size: 25px;
+
+}
+
+
+
+
+.pantallaInicial{
+    background-image: url(../../../../public/assets/img/fondos/HomeComponentBackground.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    filter: brightness(90%);
+}
+
