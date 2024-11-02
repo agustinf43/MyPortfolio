@@ -1,1 +1,39 @@
-<p>footer works!</p>
+<footer
+  class="flex items-end bg-gray-900 rounded-md shadow m-4 h-36 sm:flex-col static"
+>
+  <div class="contenedorRedes text-white w-96 h-11 flex flex-row">
+    <p class="text-center relative left-24">Redes:</p>
+
+    <ul class="relative top-8" *ngFor="let red of redes">
+      <li class="w-10 h-2.5">
+        <a [href]="red.redEnlace"
+          ><img [src]="red.link" [alt]="red.alt" class="w-10"
+        /></a>
+      </li>
+    </ul>
+  </div>
+
+  <div
+    class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
+  >
+    <span class="text-sm text-white"
+      >© 2024
+      <a href="https://github.com/agustinf43" class="hover:underline"
+        >{{ desarolladorNombre }}™</a
+      >. All Rights Reserved.
+    </span>
+    <ul
+      class="flex flex-wrap items-center mt-3 text-sm text-white font-medium sm:mt-0"
+    >
+      <li>
+        <a href="#" class="hover:underline me-4 md:me-6">Home</a>
+      </li>
+      <li>
+        <a href="#" class="hover:underline me-4 md:me-6">About</a>
+      </li>
+      <li>
+        <a href="#" class="hover:underline me-4 md:me-6">Resume</a>
+      </li>
+    </ul>
+  </div>
+</footer>

@@ -3,3 +3,14 @@
 .elemento{
     font-weight: bold;
 }
+
+.contenedorNrowsp{
+    display: flex;
+    flex-direction: row;
+
+    position: absolute;
+    right: 0;
+
+    padding-right: 10px;
+
+}
