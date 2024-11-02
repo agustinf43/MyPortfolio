@@ -1,0 +1,68 @@
+.contenedorAbout{
+    display: flex;
+    flex-direction: row;
+
+    height: 100vh;
+    width: 97vw;
+
+    margin: auto;
+
+    
+
+}
+
+h2{
+    font-weight: bold;
+    font-size: 40px;
+    border-bottom: 1px solid white;
+
+    position: relative;
+    top:-50px;
+
+}
+
+.acercaDeMi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px;
+
+    width: 60vw;
+    height: 100vh;
+
+    background-color: blueviolet;
+
+    text-align: left;
+
+    
+}
+
+.mail{
+    margin: 10px;
+    
+
+}
+
+.textoAcerca{
+    font-size: 18px;
+    color: white;
+    
+}
+
+
+
+
+.ContenedorImagen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 40vw;
+    height: 100vh;
+
+    background-color: green;
+}
+
