@@ -12,12 +12,16 @@
 }
 
 h2{
-    font-weight: bold;
+    font-weight: bold; 
     font-size: 40px;
-    border-bottom: 1px solid white;
+    font-style: italic;
 
+    border-bottom: 1px solid rgb(35 56 118) ;
     position: relative;
     top:-50px;
+    left: -310px;
+
+    
 
 }
 
@@ -27,12 +31,13 @@ h2{
     justify-content: center;
     align-items: center;
 
-    margin: 10px;
+    margin: 20px;
 
     width: 60vw;
     height: 100vh;
-
-    background-color: blueviolet;
+     
+    position: sticky;
+    
 
     text-align: left;
 
@@ -41,6 +46,16 @@ h2{
 
 .mail{
     margin: 10px;
+    position: relative;
+
+    left: -220px;
+    top: -50px;
+
+    font-size: 18px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+
+
     
 
 }
@@ -49,6 +64,7 @@ h2{
     font-size: 18px;
     color: white;
     
+
 }
 
 
@@ -63,6 +79,6 @@ h2{
     width: 40vw;
     height: 100vh;
 
-    background-color: green;
+    
 }
 

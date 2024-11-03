@@ -19,11 +19,12 @@ export class NavBarComponent {
     },
     {
       descripcion:"About",
+      href:"/About"
       
     },
     {
       descripcion:"Resume",
-      
+      href:"/Resume"
     }
 
 

@@ -1,0 +1,165 @@
+.leftside{
+    height: 100vh;
+    width: 45%;
+
+    display: flex;
+    flex-direction: column; 
+
+   
+
+    margin-left: 30px;
+    position: relative;
+
+    color: white;
+
+
+}
+
+h2{
+    height: 50px;
+    width: 100%;
+
+    text-align: center;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+
+    border-bottom: 1px solid blue; 
+
+
+
+  
+
+}
+
+.li1 p{
+    text-align: left;
+    width: 100px;
+
+    border-bottom: 1px solid white;
+
+}
+
+.knowledge{
+    height: 70%;
+    width: 100%;
+    
+    position: relative;
+    
+    font-size: 15px;
+
+    
+
+    overflow: visible;
+
+}
+
+
+.languages{
+    height: 15%;
+    width: 100%;
+
+    position: relative;
+}
+
+.li2 p{
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    height: 15%;    
+    width: 100%;
+
+    position: relative;
+
+
+}
+
+.Pskills{
+    color: white;
+    text-align: center;
+}
+
+
+/*Lado derecho*/
+
+.rightside{
+    height: 100vh;
+    width: 80%;
+    
+}
+
+h4{
+    height: 50px;
+    width: 50%;
+    color: white;
+
+    position: relative;
+    left: 150px;
+
+    text-align: center;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+
+    border-bottom: 1px solid blue; 
+
+}
+
+
+.ul4{
+    
+    height: 100%;
+    width: 80%;
+    
+    position: relative;
+    left: 10%;
+}
+
+.item1{
+    height:30px;
+    width: 30px;
+
+    background-color: rgb(35 56 118 );
+
+    border-radius: 50%;
+    position: relative;
+    left: -15px;
+    top: -5px;
+
+}
+
+.contProy{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+
+    position: relative;
+    top: 50px;
+
+    border-left: 0.5px solid rgb(35 56 118 );
+
+}
+
+.contEducacion{
+    height: 50%;
+    width: 50%;
+    
+
+    position: relative;
+
+    top: -250px;
+    left: 80px;
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+

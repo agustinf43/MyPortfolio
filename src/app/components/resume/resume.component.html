@@ -1,0 +1,70 @@
+<section class="resume h-screen flex flex-row">
+  <div class="leftside">
+    <div class="knowledge">
+      <h2>Knowledge</h2>
+
+      <ul *ngFor="let i of conocimientos">
+        <li class="li1 flex flex-row justify-evenly py-3">
+          <img [src]="i.logourl" alt="" class="h-10" />
+          <p>{{ i.tecnologia }}</p>
+
+          <br />
+
+          <p>{{ i.nivel }}</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="languages flex flex-col">
+      <h2>Languages</h2>
+
+      <ul
+        class="flex flex-row items-center justify-center"
+        *ngFor="let idioma of idiomas"
+      >
+        <li
+          class="li2 flex flex-row items-center justify-center size-7 w-screen"
+        >
+          <p>{{ idioma.idioma }}</p>
+          <p>{{ idioma.nivel }}</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="skills"></div>
+
+    <h2>Skills</h2>
+
+    <p class="Pskills">Creativity - Team Work - Organisation</p>
+  </div>
+
+  <div class="rightside">
+        <h4>Experience</h4>
+
+        <ul class="ul4">
+
+            <li class="li3">
+                <div class="contProy">
+                    <div class="item1"></div> <!--UNA DECORACIÓN-->
+
+                    <h3 class="text-white size-6 w-96 ml-2">Peluqueria Mariela - 2024</h3>
+                    <p class="text-white size-5 w-96 ml-2">Diseñé y desarrolle un sitio web estatico para la Peluqueria Mariela</p><br>
+                    <a class="text-white size-4 w-20 ml-2" href="">+ Ir al Sitio</a>
+                </div> 
+
+            </li>
+        </ul>
+
+        
+        <div class="contEducacion">
+            <h4>Education</h4>
+            <p class="text-white relative text-center left-16 top-3"><b>
+                Tecnicatura Superior en Desarrollo de Software - ISP63 Natalia Quessus.
+            </b></p>
+
+        </div>
+
+
+
+    </div>
+</section>
