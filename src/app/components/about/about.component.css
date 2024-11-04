@@ -83,7 +83,20 @@ h2{
     height: 100vh;
 
     animation: deslizar-derecha 1s ease-in-out forwards;
+
+    
+
+
 }
+
+img{
+    border-radius: 50%;
+
+    height: 300px;
+    width: 300px;
+}
+
+
 
 @keyframes deslizar-izquierda {
     0%{
