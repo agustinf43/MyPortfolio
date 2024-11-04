@@ -43,14 +43,13 @@ h1{
 
 
 .Nombre{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight:bold;
-    
-    font-style: large;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 
     position: absolute;
     left: 30px;
-    top: -210px;
+    top: -200px;
 
     font-size: 110px;
     
