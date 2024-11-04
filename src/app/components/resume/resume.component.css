@@ -13,6 +13,8 @@
     color: white;
 
 
+    animation: deslizar-izquierda 1s ease-in-out forwards;
+
 }
 
 h2{
@@ -93,6 +95,9 @@ h2{
     height: 100vh;
     width: 80%;
     
+    animation: deslizar-derecha 1s ease-in-out forwards;
+
+
 }
 
 h4{
@@ -163,3 +168,25 @@ h4{
 
 }
 
+@keyframes deslizar-izquierda {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes deslizar-derecha {
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}    
