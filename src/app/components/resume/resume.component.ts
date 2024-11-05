@@ -1,6 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { ConocimientosserviceService } from '../../servicios/conocimientosservice.service';
+import { conocimientos } from '../../modelos/conocimientos';
+import { proyectos } from '../../modelos/proyectos';
+import { ProyectosService } from '../../servicios/proyectos.service';
+
 
 @Component({
   selector: 'app-resume',
@@ -9,41 +14,50 @@ import { RouterLink } from '@angular/router';
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.css'
 })
-export class ResumeComponent {
+export class ResumeComponent implements OnInit {
 
-  conocimientos=[
-    {
-      tecnologia:"Angular",
-      logourl:"https://img.icons8.com/?size=100&id=LrbUhI925NJj&format=png&color=FFFFFF",
-      nivel:"Principiante"
-    },{
-      
-      tecnologia:"Java",
-      logourl:"https://img.icons8.com/?size=100&id=2572&format=png&color=FFFFFF",
-      nivel:"Intermedio"
+    conocimientosAgustin:conocimientos[]=[];
+    proyectosAgustin:proyectos[]=[];
 
-    },{
-      
-      tecnologia:"JavaScript",
-      logourl:"https://img.icons8.com/?size=100&id=39853&format=png&color=FFFFFF",
-      nivel:"Principiante"
-    },{
-      
-      tecnologia:"HTML",
-      logourl:"https://img.icons8.com/?size=100&id=1043&format=png&color=FFFFFF",
-      nivel:"Avanzado"
-    },{
-      
-      tecnologia:"CSS",
-      logourl:"https://img.icons8.com/?size=100&id=1045&format=png&color=FFFFFF",
-      nivel:"Avanzado"
-    },{
-      
-      tecnologia:"GIT",
-      logourl:"https://img.icons8.com/?size=100&id=38388&format=png&color=FFFFFF",
-      nivel:"Intermedio"
-    }
-  ]
+
+   constructor(private svc: ConocimientosserviceService,
+    private svcP: ProyectosService){}
+
+  
+
+   ngOnInit(): void {
+    this.mostrarConocimientos();
+    this.mostrarProyectos();
+    
+  }
+
+  mostrarConocimientos(): void {
+    this.svc.getConocimientos().subscribe({
+      next: (data) => {
+        this.conocimientosAgustin = data;
+        console.log(JSON.stringify( this.conocimientosAgustin));
+      },
+      error: (error) => {
+        console.error('Error al cargar la info', error);
+      },
+    });
+  }
+
+
+  mostrarProyectos(): void {
+    this.svcP.getProyectos().subscribe({
+      next: (data) => {
+        this.proyectosAgustin = data;
+        console.log(JSON.stringify( this.proyectosAgustin));
+      },
+      error: (error) => {
+        console.error('Error al cargar la info', error);
+      },
+    });
+  }
+
+
+
 
   idiomas=[
     {
@@ -54,9 +68,8 @@ export class ResumeComponent {
       nivel:"Intermedio"
     }
 
+
+
   ]
-
-  
-
 
 }

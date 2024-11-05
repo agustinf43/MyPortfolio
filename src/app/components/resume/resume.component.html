@@ -3,7 +3,7 @@
     <div class="knowledge">
       <h2>Knowledge</h2>
 
-      <ul *ngFor="let i of conocimientos">
+      <ul *ngFor="let i of conocimientosAgustin">
         <li class="li1 flex flex-row justify-evenly py-3">
           <img [src]="i.logourl" alt="" class="h-10" />
           <p>{{ i.tecnologia }}</p>
@@ -41,16 +41,22 @@
   <div class="rightside">
         <h4>Experience</h4>
 
-        <ul class="ul4">
+        <ul class="ul4" *ngFor="let p of proyectosAgustin">
 
-            <li class="li3">
-                <div class="contProy">
-                    <div class="item1"></div> <!--UNA DECORACIÓN-->
+            <li class="li3 flex flex-col ">
+                
+              <div class="contProy">
 
-                    <h3 class="text-white size-6 w-96 ml-2">Peluqueria Mariela - 2024</h3>
-                    <p class="text-white size-5 w-96 ml-2">Diseñé y desarrolle un sitio web estatico para la Peluqueria Mariela</p><br>
-                    <a class="text-white size-4 w-32 ml-2  hover:text-blue-900" href="https://github.com/agustinf43/peluqueriamariela">+ Ir al Proyecto</a>
-                </div> 
+                <div class="item1">
+
+                </div> <!--UNA DECORACIÓN-->
+
+                <h3 class="text-white size-6 w-96 ml-2">{{p.nombreProyecto}}</h3>
+                <p class="text-white size-5 w-96 ml-2">{{p.descripcion}}</p><br>
+                <a class="text-white size-4 w-32 ml-2  hover:text-blue-900" [href]="p.link">+ Ir al Proyecto</a>
+                
+              </div>  
+                 
 
             </li>
         </ul>
